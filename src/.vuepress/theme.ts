@@ -12,8 +12,8 @@ export default hopeTheme({
   hostname: "https://mmdctjj.github.io/blog2",
 
   author: {
-    name: "萌萌哒草头将军",
-    url: "https://mmdctjj.github.io/blog2",
+    name: "摸鱼散人",
+    url: "https://muchfish.github.io/blogs",
   },
 
   iconAssets: "iconfont",
