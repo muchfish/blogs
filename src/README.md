@@ -13,7 +13,7 @@ heroImageStyle:
   } 
 heroText: 摸鱼散人
 heroFullScreen: false
-tagline: 千里之行，始于足下
+tagline: 见微知著，方能游刃有余
 article: false
 projects:
   - icon: react
