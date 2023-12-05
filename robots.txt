@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://muchfish.github.io/blogs/sitemap.xml
+Sitemap: https://muchfish.github.io/blogs/blogs/sitemap.xml
