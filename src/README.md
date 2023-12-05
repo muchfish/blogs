@@ -11,7 +11,7 @@ heroImageStyle:
     borderRadius: "19% 81% 23% 77% / 44% 57% 43% 56%",
     boxShadow: "0 15px 18px rgba(0,0,0,0.2)",
   } 
-heroText: 萌萌哒草头将军
+heroText: 摸鱼散人
 heroFullScreen: false
 tagline: 千里之行，始于足下
 article: false
@@ -26,8 +26,8 @@ projects:
     link: https://github.com/mmdctjj/remove-others-console-loader
 
 
-footer: 萌萌哒草头将军
+footer: 摸鱼散人
 ---
 ![mmdctjj.jpg](/mmdctjj.jpg?)
 
-大家好，我是萌萌哒草头将军，欢迎关注我。
+大家好，我是摸鱼散人，欢迎关注我。
