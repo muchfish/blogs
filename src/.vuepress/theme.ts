@@ -9,7 +9,7 @@ export default hopeTheme({
 
   hotReload: true,
 
-  hostname: "https://mmdctjj.github.io/blog2",
+  hostname: "https://github.com/muchfish/blogs",
 
   author: {
     name: "摸鱼散人",
@@ -20,7 +20,7 @@ export default hopeTheme({
 
   logo: "/logo.jpg",
 
-  repo: "mmdctjj/blog2",
+  repo: "muchfish/blogs",
 
   docsDir: "src",
 
