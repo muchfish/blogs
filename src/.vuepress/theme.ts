@@ -9,7 +9,7 @@ export default hopeTheme({
 
   hotReload: true,
 
-  hostname: "https://muchfish.github.io",
+  hostname: "https://muchfish.github.io/blogs",
 
   author: {
     name: "摸鱼散人",
