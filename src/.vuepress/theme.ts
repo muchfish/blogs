@@ -59,10 +59,10 @@ export default hopeTheme({
     comment: {
       // You should generate and use your own comment service
       provider: "Giscus",
-      repo: "muchfish/blogs",
-      repoId: "R_kgDOK15NMg",
+      repo: "muchfish/blogs-comments",
+      repoId: "R_kgDOK17P0w",
       category: "Announcements",
-      categoryId: "DIC_kwDOK15NMs4CbglD"
+      categoryId: "DIC_kwDOK17P084CbgqR"
     },
 
     // all features are enabled for demo, only preserve features you need here
