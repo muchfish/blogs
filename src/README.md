@@ -28,6 +28,5 @@ projects:
 
 footer: 摸鱼散人
 ---
-![mmdctjj.jpg](/mmdctjj.jpg?)
 
 大家好，我是摸鱼散人，欢迎关注我。
