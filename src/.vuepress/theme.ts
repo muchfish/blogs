@@ -9,11 +9,11 @@ export default hopeTheme({
 
   hotReload: true,
 
-  hostname: "https://github.com/muchfish/blogs",
+  hostname: "https://muchfish.github.io",
 
   author: {
     name: "摸鱼散人",
-    url: "https://muchfish.github.io/blogs",
+    url: "https://gitee.com/daiwencheng",
   },
 
   iconAssets: "iconfont",
