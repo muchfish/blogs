@@ -35,7 +35,7 @@ export default hopeTheme({
   displayFooter: true,
 
   blog: {
-    description: "千里之行，始于足下"
+    description: "见微知著，方能游刃有余"
   },
 
   encrypt: {
