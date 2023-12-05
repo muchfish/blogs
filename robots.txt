@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://mmdctjj.github.io/blog2/sitemap.xml
