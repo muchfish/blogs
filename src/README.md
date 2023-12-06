@@ -1,32 +1,34 @@
 ---
-home: false
-layout: BlogHome
+home: true
 icon: home
-title: 首页
-heroImage: /logo.jpg
-heroImageStyle:
-  {
-    maxHeight: "150px",
-    display: block,
-    borderRadius: "19% 81% 23% 77% / 44% 57% 43% 56%",
-    boxShadow: "0 15px 18px rgba(0,0,0,0.2)",
-  } 
-heroText: 摸鱼散人
-heroFullScreen: false
+title: 鱼塘
+heroImage: /logo.svg
+heroText: 鱼塘
 tagline: 见微知著，方能游刃有余
-article: false
-projects:
-  - icon: react
-    name: RaETable
-    desc: 一款开箱即用的antd表格组件库
-    link: https://mmdctjj.github.io/raetable
-  - icon: article
-    name: console-loader
-    desc: 自动清除其他开发者console的loader
-    link: https://github.com/mmdctjj/remove-others-console-loader
-
-
-footer: 摸鱼散人
+actions:
+  - text: 开始阅读
+    link: /intro.md
+    type: primary
+    
+footer: |-
+ 
 ---
 
-大家好，我是摸鱼散人，欢迎关注我。
+## 关于网站
+
+欢迎来到鱼塘
+
+传送门：[GitHub](https://github.com/muchfish) | [Gitee](https://gitee.com/daiwencheng)。
+
+- [项目介绍](./intro.md)
+
+## 关于作者
+
+- [关于作者](./intro.md)
+
+## 占个位
+- [占个位](./intro.md)
+
+## Star 趋势
+
+![Stars](https://api.star-history.com/svg?repos=muchfish/blogs&type=Date)
