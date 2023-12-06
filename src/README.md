@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: 鱼塘
-heroImage: /logo.svg
+heroImage: /logo.png
 heroText: 鱼塘
 tagline: 见微知著，方能游刃有余
 actions:
