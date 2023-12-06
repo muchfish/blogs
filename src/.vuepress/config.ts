@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: "/blogs/",
 
   lang: "zh-CN",
-  title: "摸鱼散人",
+  title: "鱼塘",
   description: "摸鱼散人的博客",
 
   theme,
