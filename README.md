@@ -9,5 +9,6 @@
 下面是文章目录，持续更新中，希望对你的学习有用！
 
 ## 大杂烩系列
+- [博客地址](https://muchfish.github.io/blogs/)
 
-- [ 🎉尤雨溪为什么要推出Vapor Mode🎉](https://juejin.cn/post/7238153003282513957)
+- [ 🎉从零开始复刻若依pro🎉](https://gitee.com/daiwencheng/ruoyi-vue-pro-sample)
