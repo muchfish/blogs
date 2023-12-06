@@ -1,11 +1,15 @@
 ---
-icon: circle-info
-cover: /assets/images/cover3.jpg
-article: false
+containerClass: home
 home: true
+title: 主页
+icon: home
+bgImage: /4-light.svg
+bgImageDark: /6-dark.svg
+bgImageStyle:
+  background-attachment: fixed
+article: false
 layout: BlogHome
 ---
 
 # 博客总览
 
-将你的个人介绍和档案放置在此处。
