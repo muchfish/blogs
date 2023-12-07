@@ -23,7 +23,8 @@ export default hopeTheme({
   repo: "muchfish/blogs",
 
   docsDir: "src",
-
+  
+  docsBranch: "master",
   // navbar
   navbar,
 
