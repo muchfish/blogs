@@ -2,7 +2,7 @@
 
 大家好，我是摸鱼散人。
 
-我的博客主页：
+我的博客主页：https://muchfish.github.io/blogs/
 
 我的开源项目：
 
