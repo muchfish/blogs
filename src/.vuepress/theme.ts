@@ -13,7 +13,7 @@ export default hopeTheme({
 
   author: {
     name: "摸鱼散人",
-    url: "https://gitee.com/daiwencheng",
+    url: "https://github.com/muchfish",
   },
 
   iconAssets: "iconfont",
