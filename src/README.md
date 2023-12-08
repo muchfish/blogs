@@ -31,4 +31,4 @@ footer: |-
 
 ## Star 趋势
 
-![Stars](https://api.star-history.com/svg?repos=muchfish/blogs&type=Date)
+![Stars](https://api.star-history.com/svg?repos=muchfish/ruoyi-vue-pro-sample&type=Date)
