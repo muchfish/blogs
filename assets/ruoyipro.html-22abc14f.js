@@ -1,1 +1,0 @@
-import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c as t,a as r}from"./app-010c0824.js";const c={},_=r("p",null,"占位",-1),s=[_];function n(a,l){return o(),t("div",null,s)}const m=e(c,[["render",n],["__file","ruoyipro.html.vue"]]);export{m as default};

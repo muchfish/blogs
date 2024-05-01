@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-c27b6911.js";import{o,c as t,a as r}from"./app-9b2682a4.js";const c={},_=r("p",null,"占位个毛线",-1),s=[_];function n(a,l){return o(),t("div",null,s)}const m=e(c,[["render",n],["__file","ruoyipro.html.vue"]]);export{m as default};
