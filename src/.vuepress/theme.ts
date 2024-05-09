@@ -68,7 +68,6 @@ export default hopeTheme({
 
     // all features are enabled for demo, only preserve features you need here
     mdEnhance: {
-      hint: true,
       align: true,
       attrs: true,
       chart: true,
