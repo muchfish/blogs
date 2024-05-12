@@ -37,7 +37,7 @@ export default hopeTheme({
   displayFooter: true,
 
   blog: {
-    timeline: "无量浮生",
+    timeline: "浮生有涯知无涯",
     description: "见微知著，方能游刃有余"
   },
 
