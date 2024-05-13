@@ -32,7 +32,7 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: "默认页脚",
+  footer: "见微知著，方能游刃有余",
 
   displayFooter: true,
 
