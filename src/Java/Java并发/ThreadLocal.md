@@ -104,7 +104,7 @@ date: 2024-05-13
 
 - 开放定址法  
 
-  ![](C:\Users\daiwencheng\ideaProject\blogs\src\Java\Java并发\assets\img_9.png)
+  ![](../../.image/blog/img_9.png)
 
   - 简单来说，就是这个坑被人占了，那就接着去找空着的坑，往后找一圈没找到就会从头开始找
   
