@@ -4,7 +4,7 @@ export default navbar([
   {
     text: 'Java面试',
     icon: 'java',
-    link: '/Java面试/'
+    link: '/JavaInterview/'
   },
   {
     text: '杂谈',
