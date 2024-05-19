@@ -19,6 +19,21 @@ h2 {
 h3 {
   color: #88842a;
 }
+h4 {
+  color: #085594;
+}
+/* 在body中重置计数器 */
+body {
+  counter-reset: h2-counter;
+}
+
+/* 为每个h2元素插入递增的计数器 */
+h2::before {
+  counter-increment: h2-counter;
+  content: counter(h2-counter)".";
+  //margin-right: 0px;
+}
+
 //.toc-item{
 //  //color: #ba8bec;
 //  color: #ba8bec;
