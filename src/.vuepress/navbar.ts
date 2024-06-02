@@ -32,6 +32,11 @@ export default navbar([
     link: '/分布式微服务/'
   },
   {
+    text: '电气',
+    icon: 'home',
+    link: '/电气/'
+  },
+  {
     text: '杂谈',
     icon: 'article',
     link: '/posts/'

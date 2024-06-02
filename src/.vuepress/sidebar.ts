@@ -36,5 +36,6 @@ export default sidebar({
   "/数据库/": "structure",
   "/中间件/": "structure",
   "/分布式微服务/": "structure",
+  "/电气/": "structure",
   "/posts/":  "structure",
 });
