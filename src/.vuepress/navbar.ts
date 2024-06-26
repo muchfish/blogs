@@ -9,32 +9,32 @@ export default navbar([
   {
     text: 'Java框架',
     icon: 'frame',
-    link: '/框架/'
+    link: '/frame/'
   },
   {
     text: '计算机基础',
     icon: 'computer',
-    link: '/计算机基础/'
+    link: '/ComputerBasics/'
   },
   {
     text: '数据库',
     icon: 'tree',
-    link: '/数据库/'
+    link: '/database/'
   },
   {
     text: '中间件',
     icon: 'free',
-    link: '/中间件/'
+    link: '/middleware/'
   },
   {
     text: '分布式微服务',
     icon: 'home',
-    link: '/分布式微服务/'
+    link: '/Microservices/'
   },
   {
     text: '电气',
     icon: 'home',
-    link: '/电气/'
+    link: '/electric/'
   },
   {
     text: '杂谈',
