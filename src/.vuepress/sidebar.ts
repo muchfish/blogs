@@ -31,6 +31,7 @@ export default sidebar({
           children: "structure",
       },
   ],
+  "/frame/":"structure",
   "/congregation/": "structure",
   "/ComputerBasics/": "structure",
   "/database/": "structure",
