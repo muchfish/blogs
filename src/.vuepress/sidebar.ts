@@ -37,6 +37,21 @@ export default sidebar({
   "/database/": "structure",
   "/middleware/": "structure",
   "/Microservices/": "structure",
-  "/electric/": "structure",
+  "/electric/": [
+      {
+          text: "电气基础",
+          icon: "creative",
+          prefix: "basic/",
+          collapsible: true,
+          children: "structure",
+      },
+      {
+          text: "书籍",
+          icon: "creative",
+          prefix: "books/",
+          collapsible: true,
+          children: "structure"
+      }
+  ],
   "/posts/":  "structure",
 });
