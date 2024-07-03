@@ -52,6 +52,11 @@ export default navbar([
   //   link: '/category/Java/'
   // },
   {
+    text: '书籍',
+    icon: 'article',
+    link: '/book/'
+  },
+  {
     text: '时间轴',
     icon: 'time',
     link: '/timeline/'
