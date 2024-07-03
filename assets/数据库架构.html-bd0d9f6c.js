@@ -1,1 +1,0 @@
-import{_}from"./plugin-vue_export-helper-c27b6911.js";import{o as e,c as t}from"./app-b6491e94.js";const c={};function o(r,n){return e(),t("div")}const f=_(c,[["render",o],["__file","数据库架构.html.vue"]]);export{f as default};
