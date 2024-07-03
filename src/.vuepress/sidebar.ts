@@ -36,7 +36,15 @@ export default sidebar({
   "/ComputerBasics/": "structure",
   "/database/": "structure",
   "/middleware/": "structure",
-  "/Microservices/": "structure",
+  "/Microservices/": [
+      {
+          text: "docker",
+          icon: "creative",
+          prefix: "docker/",
+          collapsible: true,
+          children: "structure",
+      },
+  ],
   "/electric/": [
       {
           text: "电气基础",
