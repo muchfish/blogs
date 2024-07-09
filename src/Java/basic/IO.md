@@ -158,6 +158,8 @@ Hutool提供的XML实用程序类在使用XmlUtil.readObjectFromXml解析不受�
         }
     }
 ```
+![image](https://github.com/muchfish/blogs/assets/152949892/77e2bd39-eee7-4533-8359-f6d0ce5f9f59)
+
 ### 漏洞原理
 这个XML片段描述了一个 `java.lang.ProcessBuilder` 对象的序列化表示，并且调用了它的 `start` 方法。以下是对该XML片段的详细解释：
 
