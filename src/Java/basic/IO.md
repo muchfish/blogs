@@ -2,7 +2,7 @@
 title: IO
 order: 7
 isTimeLine: true
-date: 2024-05-12
+date: 2024-07-09
 ---
 
 ## Java 中 IO 流分为几种?  
@@ -127,3 +127,119 @@ graph LR
   - Java 的 NIO 就是 Reactor
   - 当有事件触发时，服务器端得到通知，进行相应的处理，完成后才通知(回调)服务端程序启动线程去处理
   - 一般适用于连接数较多且连接时间较长的应用
+
+
+## hutool之XmlUtil反序列化漏洞
+> - 同样存在漏洞的方法还有IoUtil.readObject方法，存在反序列化漏洞，这些方法的漏洞在JDK中本身就存在，而且JDK的做法是要求用户自行检查内容，作为工具类，这块没法解决。
+> - hutool在新版本中把这个方法拿掉了
+>   - 【core 】 【重要】删除XmlUtil.readObjectFromXml方法，避免漏洞（issue#2855@Github）
+### 使用示例
+```java
+    public static void main(String[] args) {
+        InputSource inputSource = new InputSource(StrUtil.getReader("<java>\n" +
+                "    <object class=\"java.lang.ProcessBuilder\">\n" +
+                "        <array class=\"java.lang.String\" length=\"1\">\n" +
+                "            <void index=\"0\">\n" +
+                "                <string>calc</string>\n" +
+                "            </void>\n" +
+                "        </array>\n" +
+                "        <void method=\"start\"></void>\n" +
+                "    </object>\n" +
+                "</java>\n"));
+        Object result;
+        XMLDecoder xmldec = null;
+        try {
+            xmldec = new XMLDecoder(inputSource);
+            result = xmldec.readObject();
+        } finally {
+            IoUtil.close(xmldec);
+        }
+    }
+```
+### 漏洞原理
+这个XML片段描述了一个 `java.lang.ProcessBuilder` 对象的序列化表示，并且调用了它的 `start` 方法。以下是对该XML片段的详细解释：
+
+```xml
+<java>
+    <object class="java.lang.ProcessBuilder">
+        <array class="java.lang.String" length="1">
+            <void index="0">
+                <string>calc</string>
+            </void>
+        </array>
+        <void method="start"></void>
+    </object>
+</java>
+```
+
+1. **根元素 `<java>`**:
+  - 包含整个Java对象序列化的描述。
+
+2. **对象 `<object class="java.lang.ProcessBuilder">`**:
+  - 表示创建一个 `java.lang.ProcessBuilder` 对象。
+  - `class` 属性指定了要创建的对象的类，这里是 `java.lang.ProcessBuilder`。
+
+3. **数组 `<array class="java.lang.String" length="1">`**:
+  - 表示创建一个包含 `String` 对象的数组。
+  - `class` 属性指定数组元素的类型是 `java.lang.String`。
+  - `length` 属性指定数组的长度是 1。
+
+4. **数组元素 `<void index="0">`**:
+  - 表示数组的第一个元素（索引为0）。
+  - 包含一个 `<string>` 元素，其值为 `calc`，表示要在 `ProcessBuilder` 中运行的命令是 `calc`。
+
+5. **方法调用 `<void method="start"></void>`**:
+  - 表示调用 `ProcessBuilder` 对象的 `start` 方法。
+  - `start` 方法启动由 `ProcessBuilder` 配置的进程（在这种情况下，启动计算器应用程序）。
+
+### 用Java代码展示等效的对象创建和方法调用
+
+等效的Java代码如下：
+
+```java
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) {
+        // 创建 ProcessBuilder 对象，并配置它启动 calc 命令
+        ProcessBuilder processBuilder = new ProcessBuilder("calc");
+
+        try {
+            // 调用 start 方法，启动进程
+            Process process = processBuilder.start();
+
+            // 检查进程是否在运行
+            if (process.isAlive()) {
+                System.out.println("The process is running...");
+            } else {
+                System.out.println("The process failed to start.");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+**解释**:
+
+1. **创建 `ProcessBuilder` 对象**:
+    ```java
+    ProcessBuilder processBuilder = new ProcessBuilder("calc");
+    ```
+
+2. **调用 `start` 方法**:
+    ```java
+    Process process = processBuilder.start();
+    ```
+
+3. **检查进程是否在运行**:
+    ```java
+    if (process.isAlive()) {
+        System.out.println("The process is running...");
+    } else {
+        System.out.println("The process failed to start.");
+    }
+    ```
+
+这个Java代码段执行的操作与XML描述的操作相同，创建了一个 `ProcessBuilder` 对象，配置它运行 `calc` 命令，并启动该命令。
