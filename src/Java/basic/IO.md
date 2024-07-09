@@ -133,6 +133,8 @@ graph LR
 > - 同样存在漏洞的方法还有IoUtil.readObject方法，存在反序列化漏洞，这些方法的漏洞在JDK中本身就存在，而且JDK的做法是要求用户自行检查内容，作为工具类，这块没法解决。
 > - hutool在新版本中把这个方法拿掉了
 >   - 【core 】 【重要】删除XmlUtil.readObjectFromXml方法，避免漏洞（issue#2855@Github）
+### 问题描述
+Hutool提供的XML实用程序类在使用XmlUtil.readObjectFromXml解析不受信任的XML字符串时可能容易受到远程代码执行的攻击
 ### 使用示例
 ```java
     public static void main(String[] args) {
