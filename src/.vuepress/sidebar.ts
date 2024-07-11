@@ -59,6 +59,13 @@ export default sidebar({
             prefix: "books/",
             collapsible: true,
             children: "structure"
+        },
+        {
+            text: "智能变电站",
+            icon: "creative",
+            prefix: "intelligentSubstation/",
+            collapsible: true,
+            children: "structure"
         }
     ],
     "/posts/": "structure",
