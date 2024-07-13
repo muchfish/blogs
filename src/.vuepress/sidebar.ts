@@ -66,6 +66,13 @@ export default sidebar({
             prefix: "intelligentSubstation/",
             collapsible: true,
             children: "structure"
+        },
+        {
+            text: "二次回路",
+            icon: "creative",
+            prefix: "secondaryCircuit/",
+            collapsible: true,
+            children: "structure"
         }
     ],
     "/posts/": "structure",
